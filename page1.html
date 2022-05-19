@@ -23,12 +23,7 @@
 
     }
     
-    .wordsbox{
-        margin: 0 auto;
-        padding-top: 20px;
-       
 
-    }
 
     .homebox{
          color:rgb(159, 107, 255) ;
@@ -50,7 +45,7 @@
         border-radius: 50px;
         color: rgb(159, 107, 255);
         padding-top: 10px;
-        margin-left: 15rem;
+        margin-left: 40rem;
         margin-top: 18px;
        }
        .mainbox{
@@ -235,24 +230,73 @@
                 margin-left: 1px;
             }
 
-           
+            .topnav {
+  overflow: hidden;
+align-items: center;
+ justify-content: center;
+  flex-direction: row;
+  display: flex;
+}
 
+.topnav a {
 
+  color: black;
+  text-align: center;
+  padding: 14px 50px ;
+  text-decoration: none;
+  font-size: 17px;
+ display: flex;
   
-       
+  
+  }
+
+.topnav a:hover {
+
+  color: black;
+}
+
+.topnav a.active {
+  color:  rgb(159, 107, 255) ;
+}
+
+.logo{
+    justify-content: center;
+    align-items: center;
+border: 1px solid rgb(0, 0, 0);
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+  .topnav a{
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .topnav{
+      flex-direction: column;
+      }
+}
+
+
+
+
+
 </style>
 <body>
     <div class="main">
-    <div class="img">
-    <img src="img/light.png" alt="no" height="50px" width="85px">
-      <div class="wordsbox"><b><span style="color: rgb(159, 107, 255);"> Edu</span>Learn</div></b>
-    <div class="homebox">Home</div>
-    <div class="couresbox"> courses </div>
-    <div class="couresbox"> Mentors </div>
-    <div class="couresbox"> Pricing </div>
-    <div class="couresbox"> Blog </div>  
-    <div class="registerbox"> Register </div> 
-</div>
+        <div class="topnav">
+            
+            <a class="active logo" href="#home"> <img src="img/light.png" alt="noo" width="100px" height="70px">
+              Edulearn 
+             <a href="#contact"><span style="color: rgb(159, 107, 255); margin-top: 10px;"> HOME</span></a>
+            <a href="#about"> course </a>
+            <a href="#contact"> mentor </a>
+            <a href="#about"> Pricing </a>
+            <a href="#about"> Blog </a>
+          </div>
 <div class="mainbox">
 <div class="box">
    <b> Let's Learn New <br>
